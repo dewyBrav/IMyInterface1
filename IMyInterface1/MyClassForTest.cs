@@ -28,7 +28,8 @@ namespace IMyInterface1
     class MyClassNumberThree: MyClassForTest, Interface1
     {
 
-        public void Draw() 
+        //явное реализация
+         void Interface1.Draw() 
         {
             Console.WriteLine("Is Interface? and From: {0}  base: {1} ", GetType().Name, GetType().BaseType);
         }
